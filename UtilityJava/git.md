@@ -1,5 +1,17 @@
+#git config --global --list
+#git config --global user.name ""
+#git config --global user.email ""
 
-# 서버와 로컬 동기화
-git fetch --prune origin 
-git reset --hard origin/master 
-git clean
+=> 상태값 확인
+#git status 
+#git remote -v
+
+=> local -> git commit
+#git add .
+#git commit -m "ver message"
+#git push origin master
+
+=> git -> local 동기화
+#git fetch --prune origin 
+#git reset --hard origin/master 
+#git clean
