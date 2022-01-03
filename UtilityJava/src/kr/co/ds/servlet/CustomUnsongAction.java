@@ -7,6 +7,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.apache.log4j.Logger;
+import java.util.Calendar;
 
 /**
  * Servlet implementation class CustomUnsongAction
@@ -14,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/Custem-unsong")
 public class CustomUnsongAction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	Logger logger = Logger.getLogger(this.getClass());
     /**
      * Default constructor. 
      */
@@ -60,9 +62,9 @@ public class CustomUnsongAction extends HttpServlet {
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("utf-8");
 		response.setHeader("Access-Control-Allow-Origin", "*");
-		
+		System.out.println("===========================> ");
 		// key 값을 받아 처리
-		
+		logger.info(" . Request("+ Calendar.getInstance().getTime() + "2022 01 03 API DOC Make");
 	}
 
 }
