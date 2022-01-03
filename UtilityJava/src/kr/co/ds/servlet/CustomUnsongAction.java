@@ -1,6 +1,9 @@
 package kr.co.ds.servlet;
 
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -62,7 +65,11 @@ public class CustomUnsongAction extends HttpServlet {
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("utf-8");
 		response.setHeader("Access-Control-Allow-Origin", "*");
-		System.out.println("===========================> ");
+		OutputStream os = response.getOutputStream();
+		
+		PrintStream out =  new PrintStream(os, true);
+		out.println(" < Hello World !! > ");
+		
 		// key 값을 받아 처리
 		logger.info(" . Request("+ Calendar.getInstance().getTime() + "2022 01 03 API DOC Make");
 	}
