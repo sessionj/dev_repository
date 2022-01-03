@@ -1,6 +1,6 @@
 package kr.co.ds.domain;
 
-public class UnsongEmpty {
+public class UnsongEntity {
 
 	private String billno;
 

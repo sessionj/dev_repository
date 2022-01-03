@@ -1,14 +1,14 @@
 package kr.co.ds.controler;
 
 import java.util.ArrayList;
-import kr.co.ds.domain.UnsongEmpty;
+import kr.co.ds.domain.UnsongEntity;
 
 public class RepositoryAct {
 
-	private UnsongEmpty unsongEmpty;
+	private UnsongEntity unsongEmpty;
 	
 	public RepositoryAct() {
-		unsongEmpty = new UnsongEmpty();
+		unsongEmpty = new UnsongEntity();
 	}
 	
 	public static void inputUnsong(){
@@ -22,10 +22,13 @@ public class RepositoryAct {
 	public static void modifyUnsong() {
 		
 	}
+	
+	public static ArrayList<UnsongEntity> loadUnsong(){
+		
+		return null;
+	}
   
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("===============> hello World   !!!");
-		System.out.println("===============> ad");  
 	}
 } 
