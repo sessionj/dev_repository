@@ -15,7 +15,12 @@ import java.util.Calendar;
 
 /**
  * Servlet implementation class CustomUnsongAction
+ * /**
+ * param 정의
+ * 이벤트 값 : I | D | U + 등록에 필요한 데이터 (구분자 ? TAB )
+ * 
  */
+
 @WebServlet("/Custem-unsong")
 public class CustomUnsongAction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
