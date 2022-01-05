@@ -1,0 +1,142 @@
+* {margin:0;padding:0;font-family:Malgun Gothic,Nanum Gothic,Arial,Gulim,Helvetica,AppleGothic,Sans-serif;-webkit-text-size-adjust:none;}
+body {margin:0; padding:0; background:#fff; font-size:16px; color:#474747;}
+img {border:0;margin:0; padding:0;}
+dl,ul,ol,li, p{ margin: 0 auto;overflow: hidden;padding: 0;list-style: none; letter-spacing:0px; line-height:20px; }
+.font_weight{font-weight: bold;}
+a { text-decoration:none; overflow:hidden; color:#666;}
+
+
+
+/*로고*/
+#mainTop01 {width:100%; height:50px; border-bottom:solid 2px #00cc66;}
+#mainTop01 .mainTopLeft {float:left;padding:22px 0 0 10px;}
+#mainTop01 .mainTopRight {float:right; padding:15px 10px 0 0; text-align:right;}
+#mainTop01 .mainTopRight p { float:left; padding-left:5px}
+
+
+#mainTop {width:100%; height:50px; border-bottom:solid 2px #52a203;}
+#mainTop .mainTopLeft {float:left;padding:22px 0 0 10px;}
+#mainTop .mainTopRight {float:right; padding:15px 10px 0 0; text-align:right;}
+#mainTop .mainTopRight p { float:left; padding-left:5px}
+
+/*공지사항*/
+#mainNotice { width:100%; height:28px; }
+#mainNotice .mainNotice_img { padding:6px 10px 0 10px;float:left;}
+#mainNotice .mainNotice_text { padding-top:6px;}
+
+/*메뉴*/
+
+#mainmenu {clear:both;text-align:center; width:100%;}
+#mainmenu #mm {background:url(../images/common/menu_bg02.gif) repeat-x;height:38px; }
+
+#mainmenu01 {clear:both;text-align:center; width:100%;}
+#mainmenu01 #mm {background:url(../images/common/menu_bg04.png) repeat-x;height:38px; }
+.menu01{width:20%; float:left; background:url(../images/common/menu_bg03.png) no-repeat right top; padding-top:5px; color:#ffffff;}
+
+.menu1{width:24%; float:left; background:url(../images/common/menu_bg01.png) no-repeat right top; padding-top:5px; color:#ffffff;}
+.menu1_0{width:20%; float:left; background:url(../images/common/menu_bg01.png) no-repeat right top; padding-top:5px; color:#ffffff;}
+.menu1_1{width:25%; float:left; background:url(../images/common/menu_bg01.png) no-repeat right top; padding-top:5px; color:#ffffff;}
+.menu1_2{width:30%; float:left; background:url(../images/common/menu_bg01.png) no-repeat right top; padding-top:5px; color:#ffffff;}
+.menu1_3{width:40%; float:left; background:url(../images/common/menu_bg01.png) no-repeat right top; padding-top:5px; color:#ffffff;}
+  
+.menu1_5{width:13%; float:left; background:url(../images/common/menu_bg01.png) no-repeat right top; padding-top:10px; color:#ffffff; font-weight: bold;}
+.menu1_6{width:87%; float:left; background:url(../images/common/menu_bg01.png) no-repeat right top; padding-top:5px; color:#ffffff;}
+
+.menu2{ float:center; padding-top:5px; color:#ffffff;}
+.submenu {padding:4px 10px 0 0; }
+
+/*list01*/ 
+.List01 li{border-bottom:solid 1px #d9d9d9; overflow:hidden; padding:10px 20px 10px 10px; background:url(../images/common/btn_go.gif) no-repeat 100%;}
+.List01 li.grey { background-color:#f2f2f2;}
+.List01 .photo{ float:left; padding-right:10px;}
+.List01 .photo img { border:2px solid #bbb; width:78px; height:52px;}
+.List01 .title{display:block; margin:0 0 0 20px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; font-weight:bold; color:#ff9000; background:url(../images/common/blit02.gif) no-repeat 0 3px; padding-left:20px;}
+.List01 .address{font-size:13px;color:#777;} 
+.List01 .address img {vertical-align:middle;}
+.List01 .call {margin:0 0 0 95px; width:150px; display:block;} 
+
+
+/*list02*/
+.List02 li{border-bottom:solid 1px #d9d9d9; position:relative; display:block; overflow:hidden; padding:10px 20px 10px 10px; background:url(../images/common/btn_go.gif) no-repeat 100%;}
+.List02 li.grey { background-color:#f2f2f2;}
+.List02 .title{display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; font-weight:bold; color:#ff9000; background:url(../images/common/blit02.gif) no-repeat 0 3px; padding-left:20px;}
+.List02 .address{display:block; font-size:13px;color:#777;} 
+.List02 .address img {vertical-align:middle; padding-left:10px;}
+.List02 .call {display:block; }
+.List02 .call a { display:inline;}
+.new { vertical-align:middle; margin-left:5px;}
+
+/*list03*/
+.List03 li{border-bottom:solid 1px #d9d9d9; position:relative; display:block; text-align:center; overflow:hidden; padding:10px 20px 10px 10px; }
+.List03 li.grey { background-color:#f2f2f2;}
+.List03 .title{display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; font-weight:bold; color:#ff9000; background:url(../images/common/blit02.gif) no-repeat 0 3px; padding-left:20px;}
+.List03 .address{display:block; font-size:13px;color:#777;} 
+.List03 .address img {vertical-align:middle; padding-left:10px;}
+.List03 .call {display:block; }
+.List03 .call a { display:inline;}
+.new { vertical-align:middle; margin-left:5px;}
+
+/*contents*/
+h3 { color:#fff; font-size:17px; font-weight:bold; padding:6px 0 6px 5px; background:url(../images/common/menu_bg04.gif) repeat-x;}
+h4 {font-weight:bold; color:#52a203; padding:15px 10px 10px 25px; background:url(../images/common/blit01.gif) no-repeat 10px 18px; font-size:14px;}
+#contents01 { width:100%;background:#f2f2f2;}
+#contents01 .address {float:left; margin:5px 0 0 10px; display: block;}
+#contents01 .call { float:right; margin:5px 10px 0 0;}
+#contents01 .call a { display:inline;}
+
+.contents02 { border-bottom:solid 1px #ddd; padding-bottom:10px;}
+
+.contents02 .text { padding:0 10px 5px 10px; }
+.contents02 .text strong {color:#ff9000; background:url(../images/common/blit04.gif) no-repeat 7px 5px; padding-left:15px;}
+.contents02 .text ul li { background:url(../images/common/dot.gif) no-repeat 10px 10px; padding-left:20px;}
+.contents02 .text02 { padding:0 10px 5px 10px; }
+.contents02 .text02 a { display:inline; color:#ff9000;}
+.contents02 .text03 { padding:0 10px 5px 10px; }
+.contents02 .text03 li {background:url(../images/common/dot.gif) no-repeat 0 10px; padding-left:10px;}
+.contents02 .text03 li a { display:inline;}
+.contents02 .text03 strong {color:#ff9000;}
+
+#contents03 {background:#fee7c5; padding:5px 5px 5px 5px;}
+#contents03 .text { padding:1px 0px 1px 0px; }
+#contents03 strong {color:#52a203;}
+#contents03 a { display:inline;}
+#contents04 { border-bottom:solid 1px #ddd; padding:0 10px 15px 10px;}
+#contents05 { border-bottom:solid 1px #ddd; padding:15px 10px 15px 10px;}
+
+/*목록*/
+#listgo { text-align:right;  padding:15px 10px 0 20px;}
+
+/*테이블*/
+.table01 { width:100%; border-top:solid 2px #ff9000; border-collapse:collapse; border-spacing:0; line-height:18px;  font-size:13px;}
+.table01 th { border:1px solid #ddd; padding:7px; background:#f5f5f5; color:#666666; }
+.table01 td { border:1px solid #ddd; padding:7px; color:#666666; border-left:none;} 
+
+.table02{ width:100%; border-top:solid 1px #ff9000; border-collapse:collapse; border-spacing:0; line-height:18px;  font-size:13px; text-align:center;}
+.table02 th { border:1px solid #ddd; padding:7px; background:#f5f5f5; color:#666666;  }
+.table02 td { border:1px solid #ddd; padding:7px; color:#666666;} 
+.table02 .color01 { background-color:#ffeace;}
+
+.table03{ width:100%; border-top:solid 2px #ff9000; border-collapse:collapse; border-spacing:0; line-height:18px;  font-size:13px; text-align:center; margin:10px 0;}
+.table03 th { border:1px solid #ddd; padding:7px; background:#fff4e6; color:#666666;  }
+.table03 td { border:1px solid #ddd; padding:7px; color:#666666;} 
+
+/*더보기*/
+.more { height:28px; text-align:center; background:#ff9000; width:100%;padding-top:5px;}
+.more a { color:#fff;  display:block; overflow:hidden; }
+
+/*footer*/
+#footer { clear:both; width:100%; height:23px; padding:5px 0 5px 0; text-align:center; background:#ddd; margin-top:15px; }
+#Mfooter { clear:both; width:100%; height:20px; padding:5px 0 5px 0; text-align:center; background:#ddd;}
+
+.lmar50 { margin-left:49px;}
+.tmar10 { margin-top:10px;}
+.tmar15 { margin-top:15px;}
+.bmar5 { margin-bottom:5px;}
+.hidden { display:none;}
+.middle {vertical-align:middle;}
+
+fieldset  {margin:0px;padding:0px;border:none;}
+legend  {margin:0px;padding:0px;width:0px;height:0px;font-size:0px;line-height:0px;color:#fff;overflow:hidden;position:absolute;left:0px;top:0px;}
+form  {margin:0px;padding:0px;}
+caption { display:none;}
+.orange {color:#ff9000;}
