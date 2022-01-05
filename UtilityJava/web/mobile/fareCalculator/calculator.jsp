@@ -40,47 +40,7 @@
     
     if( streetCode != null && !streetCode.equals("")){
 			
-		query = "SELECT   MAX (DECODE (x.frto, 'fr', x.agencycode, '')) AS stagencycode, "+
-			"         MAX (DECODE (x.frto, 'to', x.agencycode, '')) AS edagencycode, "+
-			"         MAX (DECODE (x.frto, 'fr', x.agencyname, '')) AS stagencyname, "+
-			"         MAX (DECODE (x.frto, 'to', x.agencyname, '')) AS edagencyname, "+
-			"         TO_CHAR (SUM (DECODE (x.frto, 'fr', x.fare, 0)), "+
-			"                  '999,999,999,999' "+
-			"                 ) AS sendfare, "+
-			"         TO_CHAR (SUM (DECODE (x.frto, 'to', x.fare, 0)), "+
-			"                  '999,999,999,999' "+
-			"                 ) AS arrivefare, "+
-			"         gubun "+
-			"    FROM (SELECT a.agencycode, code.lib.f_agency (a.agencycode) agencyname, "+
-			"                 b.fare, DECODE (?, beflinecode, 'to', 'fr') frto, "+
-			"                 d.passorder, a.aftlinecode, a.beflinecode, '909302', "+
-			"                 DECODE "+
-			"                    (?, "+
-			"                     beflinecode, DECODE "+
-			"                                (SUBSTR (a.aftlinecode, 1, 1), "+
-			"                                 '0', '1', "+
-			"                                 CASE "+
-			"                                    WHEN a.progressno > 1 "+
-			"                                    AND SUBSTR (a.aftlinecode, 1, 1) <> '0' "+
-			"                                    AND SUBSTR (a.beflinecode, 1, 1) <> '0' "+
-			"                                       THEN '2' "+
-			"                                    ELSE '3' "+
-			"                                 END "+
-			"                                ), "+
-			"                     '3' "+
-			"                    ) AS gubun "+
-			"            FROM receipt.unsongtransway a, "+
-			"                 receipt.unsong b, "+
-			"                 (SELECT passorder, linecode, linename, agencycode "+
-			"                    FROM code.globallinecode "+
-			"                   WHERE linecode = ?) d "+
-			"           WHERE a.input_date = ? "+
-			"             AND a.agencycode = d.agencycode "+
-			"             AND (a.aftlinecode = d.linecode OR a.beflinecode = d.linecode) "+
-			"             AND b.billno = a.billno "+
-			"             AND b.dmlgubun <> 'D') x "+
-			"GROUP BY x.agencycode, x.agencyname, x.passorder, x.gubun "+
-			"ORDER BY x.passorder, x.gubun";
+		query = "";
 
 		qryMgr = new PublicQueryManager();
 		
