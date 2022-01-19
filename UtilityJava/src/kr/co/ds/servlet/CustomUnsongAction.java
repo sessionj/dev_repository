@@ -16,9 +16,13 @@ import java.util.Calendar;
 /**
  * Servlet implementation class CustomUnsongAction
  * /**
- * param 정의
- * 이벤트 값 : I | D | U + 등록에 필요한 데이터 (구분자 ? TAB )
+ * 업무 정의
  * 
+ * 1. 운송장 발행
+ * 2. 운송장 수정
+ * 3. 운송장 삭제
+ * 4. 바코드 출력용 데이터 제공 
+ * 5. 
  */
 
 @WebServlet("/Custem-unsong")
